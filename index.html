@@ -1,12 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="./styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Portfolio</title>
 </head>
 <body>
-    
+  <!--Navigation Bar (Header)-->
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand text-uppercase" href="#">First Last</a>
+        <!--Hamburger Menu Button-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarlinks">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Navigation Bar's Links-->
+        <div class="collapse navbar-collapse" id="navbarlinks">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+  <!--Hero Carousel-->
+  <div id="hero-carousel" class="carousel slide">
+    <!--Horizontal Line Indicators for the Carousel-->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <!--Carousel Item 1-->
+      <div class="carousel-item active c-item">
+        <img src="images/pexels-ryan-klaus-19727174.jpg" class="d-block w-100 c-img" alt="...">
+        <div class="carousel-caption top-0 mt-4">
+          <!--display[1-5] is for header sizes, fs[1-5] is for text sizes-->
+          <h1 class="display-3 fw-bold">Title</h1>
+          <p class="fs-4 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Ratione eum fuga iste laborum rem quasi.</p>
+          <button class="btn btn-primary px-4 py-2 fs-5 mt-5">CallToAction</button>
+        </div>  
+      </div>
+      <!--Carousel Item 2-->
+      <div class="carousel-item c-item">
+        <img src="images/pexels-james-wheeler-1462292.jpg" class="d-block w-100 c-img" alt="...">
+      </div>
+      <!--Carousel Item 3-->
+      <div class="carousel-item c-item">
+        <img src="images/pexels-maarten-van-den-heuvel-2676841.jpg" class="d-block w-100 c-img" alt="...">
+      </div> 
+    </div>
+
+    <!--Left/Right Carousel Buttons-->
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--About Me Section-->
+  <section>
+    <div>
+      <div class="container">
+        <h2 class="pt-5 text-center display-5" id="About">About Me</h2>
+        
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <!--Description About Me-->
+            <h3>Hello, I'm Name</h3>
+            <div class="lead fw-normal">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga praesentium error vel, 
+                ex incidunt tempore voluptate tenetur deleniti repellat ea?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga praesentium error vel, 
+                ex incidunt tempore voluptate tenetur deleniti repellat ea?</p>
+            </div>
+          </div>
+          <div class="col-md-6  d-flex justify-content-center">
+            <img src="images/pexels-portrait-somesh-kotalwar-5358943.jpg" id="img-about" alt="" class=" c-about img-fluid ">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Portfolio Section-->
+  <section>
+    <h2 class="my-5 text-center display-5" id="Portfolio">Portfolio</h2>
+    <!--Portfolio Item 1-->
+    <div class="container">
+      <div class="p-rectangle d-flex">
+        <div class="p-image-box">
+          <img src="images/candles.png" alt="Image">
+        </div>
+        <div class="p-description">
+          <h2>Title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Dolorum pariatur beatae cupiditate saepe veniam sapiente corrupti.
+          </p>
+          <a href="https://lakehousecandles.ca/">Visit Lakehouse Candles!</a> 
+        </div>
+      </div>
+    </div>
+        <!--Portfolio Item 2-->
+    <div class="container">
+      <div class="p-rectangle d-flex">
+        <div class="p-image-box">
+          <img src="images/pexels-yoga-prasanth-inturi-1051838.jpg" alt="Image">
+        </div>
+        <div class="p-description">
+          <h2>Title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Dolorum pariatur beatae cupiditate saepe veniam sapiente corrupti.
+          </p>
+          <a href="https://example2.ca/">Visit Example 1!</a> 
+        </div>
+      </div>
+    </div>
+        <!--Portfolio Item 3-->
+    <div class="container">
+      <div class="p-rectangle d-flex">
+        <div class="p-image-box">
+          <img src="images/pexels-workshop-pixabay-301703.jpg" alt="Image">
+        </div>
+        <div class="p-description">
+          <h2>Title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Dolorum pariatur beatae cupiditate saepe veniam sapiente corrupti.
+          </p>
+          <a href="https://example2.ca/">Visit Example 2!</a> 
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!--Contact Section-->
+
+  <section class="py-md-5">
+    <h2 class="pt-5 text-center display-5" id="Contact">Contact</h2>
+    <div class="container">
+      <p>To be added</p>
+    </div>
+  </section>
+  </main>
+
+  <!--Footer Section-->
+  <footer class="pt-5 mt-5 bg-dark">
+    <div class="container text-light">
+      <div class="row">
+        <div class="col-md-4 d-flex">
+          <p class="text-light fs-1">First Last</p>
+        </div>
+        <div class="col-md-4">
+          <!--Left Empty for spacing, possibly put page links here.-->
+        </div>
+        <div class="col-md-4">
+          <p class="fs-5"><a href="tel:+19059059059">905-905-9059</a></p>
+          <p>Cobourg, Ontario, Canada</p>
+          <p>(social icons section here)</p>
+        </div>
+      </div>
+    </div>
+    <hr class="mt-5"> <!--Spacing between copyright and footer content-->
+    <div class="pb-2">
+      <p class=" text-center text-light">&copy; Copyright by Person. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

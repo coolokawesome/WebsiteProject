@@ -1,2 +1,79 @@
-body {
+/*Hero Section*/
+
+/*Carousel Items*/
+.c-item{
+  height: 30rem;
+}
+
+/*Carousel Images within the Carousel Items*/
+.c-img{
+  height: 100%;
+  object-fit: cover;
+  /*Makes carousel images darker to put white text over them:*/
+  filter: brightness(0.6);
+}
+
+/*Left/Right Clickable areas on the carousel*/
+.carousel-control-prev, .carousel-control-next {
+  width: 7%; 
+}
+
+/*About Me Section*/
+
+/*Source for the box-shadow, #50 at this link: https://getcssscan.com/css-box-shadow-examples
+*/
+.c-about{
+  height: auto ;
+  width: 100% ;
+  /*Added for this example image to not be oversized at bigger screens:*/
+  max-width: 28rem; 
+
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+
+}
+
+/*Portfolio Section*/
+
+.p-rectangle {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.p-image-box {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.p-image-box img {
+  width: 100%;
+  height: auto;
+}
+
+.p-description {
+  padding: 20px;
+}
+
+/*The portfolio image box doesn't look on smaller screens, 
+so this breakpoint makes it mobile friendly.*/
+@media (max-width: 767px) {
+  /* Write your CSS rules here */
+  .p-rectangle.d-flex {
+    flex-direction: column;
+  }
+
+  .p-image-box {
+    flex: 0 0 auto;
+    max-width: 100%; /* Ensure the image fills the width */
+    margin-bottom: 20px; /* Add space between image and description */
+  }
+}
+
+/*Contact Section*/
+/*Empty for now*/
+
+/*Footer Section*/
+footer a{
+  text-decoration: none;
+  color: white;
 }
